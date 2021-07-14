@@ -25,7 +25,11 @@ To run all tests, simply run:
 $ truffle test
 ```
 
-Alternatively, you can specify a path to a specific file you want to run, e.g.,
+Note that the `test` command will automatically start a test network locally if you have don't have
+a network named "test" defined in the [networks](/docs/truffle/reference/configuration#networks)
+portion of your `truffle-config.js`.
+
+Alternatively, if you only want to run one test file, you can specify a path to the specific file you want to run, e.g.,
 
 ```shell
 $ truffle test ./path/to/test/file.js
